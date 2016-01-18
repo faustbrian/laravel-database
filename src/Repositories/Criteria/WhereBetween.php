@@ -14,7 +14,7 @@ class WhereBetween extends Criterion
     private $column;
 
 
-    private $column;
+    private $values;
 
 
     public function __construct($column, array $values)
