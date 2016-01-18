@@ -10,9 +10,6 @@ use DraperStudio\Database\Utils\DateTime;
 
 interface DateTimeTrait
 {
-    use DateTimeFindTrait;
-
-
     public function fromToday();
 
 

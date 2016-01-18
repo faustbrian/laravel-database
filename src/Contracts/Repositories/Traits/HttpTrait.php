@@ -24,7 +24,4 @@ interface HttpTrait
 
 
     public function patch($id, array $data);
-
-
-    protected function validate(array $data, array $rules);
 }

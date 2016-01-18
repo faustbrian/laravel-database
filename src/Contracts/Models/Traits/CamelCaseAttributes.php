@@ -29,9 +29,6 @@ interface CamelCaseAttributes
     public function getOriginal($key = null, $default = null);
 
 
-    private function toSnakeCase($attributes);
-
-
     public function getTrueKey($key);
 
 
