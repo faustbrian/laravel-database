@@ -33,7 +33,4 @@ interface CamelCaseAttributes
 
 
     public function isCamelCase();
-
-
-    protected function getSnakeKey($key);
 }
