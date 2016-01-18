@@ -25,7 +25,8 @@ use DraperStudio\Database\Traits\Repositories\RequireTrait;
 use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
 
-class BaseRepository extends AbstractRepository implements AggregateContract,
+class BaseRepository extends AbstractRepository implements
+AggregateContract,
                                                            BuilderContract,
                                                            CollectionContract,
                                                            CriteriaContract,

@@ -6,8 +6,7 @@ use DraperStudio\Database\Contracts\Presenters\Traits\RoutesTrait as RoutesContr
 use DraperStudio\Database\Traits\Presenters\DateTimeTrait;
 use DraperStudio\Database\Traits\Presenters\RoutesTrait;
 
-class BasePresenter extends AbstractPresenter implements RoutesContract,
-                                                         DateTimeTrait
+class BasePresenter extends AbstractPresenter implements RoutesContract, DateTimeTrait
 {
     use RoutesTrait;
     use DateTimeTrait;

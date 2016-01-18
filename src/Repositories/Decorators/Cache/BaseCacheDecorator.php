@@ -20,7 +20,8 @@ use DraperStudio\Database\Traits\Repositories\Decorators\Cache\FindTrait;
 use DraperStudio\Database\Traits\Repositories\Decorators\Cache\RelationshipTrait;
 use DraperStudio\Database\Traits\Repositories\Decorators\Cache\RequireTrait;
 
-class BaseCacheDecorator extends AbstractCacheDecorator implements AggregateContract,
+class BaseCacheDecorator extends AbstractCacheDecorator implements
+AggregateContract,
                                                                    BuilderContract,
                                                                    CollectionContract,
                                                                    CriteriaContract,
