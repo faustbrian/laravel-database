@@ -1,0 +1,21 @@
+{
+    "name": "faustbrian/laravel-database",
+    "description": "Repositories, Entities and Presenters for Laravel 5.",
+    "require": {
+        "php": ">=5.5.9",
+        "faustbrian/laravel-service-provider": "^1.0",
+        "hashids/hashids": "^1.0",
+        "illuminate/database": "5.1.*|5.2.*",
+        "nesbot/carbon": ">=1.21.0",
+        "ramsey/uuid": "^3.1"
+    },
+    "suggest": {
+        "sofa/eloquence": "Flexible Searchable, Mappable, Metable, Validation and more extensions for Laravel Eloquent ORM. (Require ~5.2)",
+        "watson/validating": "Eloquent model validating trait. (Require ~2.0)"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrianFaust\\Database\\": "src/"
+        }
+    }
+}
