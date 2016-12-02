@@ -3,10 +3,10 @@
 namespace BrianFaust\Database;
 
 use BrianFaust\Database\Connectors\ConnectionFactory;
-use BrianFaust\ServiceProvider\ServiceProvider as BaseProvider;
+use BrianFaust\ServiceProvider\ServiceProvider;
 use Sofa\Eloquence\ServiceProvider as SofaServiceProvider;
 
-class ServiceProvider extends BaseProvider
+class DatabaseServiceProvider extends ServiceProvider
 {
     public function register()
     {
