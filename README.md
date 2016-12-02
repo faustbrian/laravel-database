@@ -10,9 +10,7 @@ composer require faustbrian/laravel-database:1.0.*@dev
 And then include the service provider within `app/config/app.php`.
 
 ```php
-'providers' => [
-    BrianFaust\Database\ServiceProvider::class
-];
+BrianFaust\Database\ServiceProvider::class
 ```
 
 ## Base Classes
