@@ -30,7 +30,7 @@ abstract class Migration
 
     protected $schema;
 
-    public function __construct(): void
+    public function __construct()
     {
         $this->schema = \DB::getSchemaBuilder();
 
