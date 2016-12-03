@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Database.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Database\Behaviours\CountCache;
 
 use Illuminate\Database\Eloquent\Model;
@@ -39,13 +48,13 @@ class CountCacheManager
         $this->model = $model;
 
         $this->applyToCountCache(function ($config) {
-             $foreignKey = $this->key($this->model, $config['foreignKey']);
+            $foreignKey = $this->key($this->model, $config['foreignKey']);
 
-             if ($this->model->getOriginal($foreignKey) && $this->model->{$foreignKey} != $this->model->getOriginal($foreignKey)) {
-                 $this->update($config, '-', $this->model->getOriginal($foreignKey));
-                 $this->update($config, '+', $this->model->{$foreignKey});
-             }
-         });
+            if ($this->model->getOriginal($foreignKey) && $this->model->{$foreignKey} != $this->model->getOriginal($foreignKey)) {
+                $this->update($config, '-', $this->model->getOriginal($foreignKey));
+                $this->update($config, '+', $this->model->{$foreignKey});
+            }
+        });
     }
 
     protected function update(array $config, $operation, $foreignKey)
@@ -107,10 +116,10 @@ class CountCacheManager
     protected function defaults($options, $relatedModel)
     {
         $defaults = [
-            'model' => $relatedModel,
+            'model'      => $relatedModel,
             'countField' => $this->field($this->model, 'count'),
             'foreignKey' => $this->field($relatedModel, 'id'),
-            'key' => 'id',
+            'key'        => 'id',
         ];
 
         return array_merge($defaults, $options);

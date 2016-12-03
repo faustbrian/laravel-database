@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Database.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Database\Traits\Models;
 
 use Illuminate\Contracts\Encryption\DecryptException;
@@ -95,7 +104,7 @@ trait EncryptAttributes
         $method = defined('SECURE_DOT_ENV') ? 'sec_env' : 'env';
 
         return [
-            'key' => $method('DB_KEY'),
+            'key'    => $method('DB_KEY'),
             'cipher' => $method('DB_CIPHER', 'AES-256-CBC'),
         ];
     }
