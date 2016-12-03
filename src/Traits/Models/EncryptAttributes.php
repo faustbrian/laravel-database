@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Database\Traits\Models;
 
 use Illuminate\Contracts\Encryption\DecryptException;
@@ -61,7 +63,6 @@ trait EncryptAttributes
             try {
                 $model->$attribute = static::getEncrypter()->encrypt($model->$attribute);
             } catch (EncryptException $e) {
-                //
             }
         }
 
@@ -76,7 +77,6 @@ trait EncryptAttributes
                     $model->$attribute = static::getEncrypter()->decrypt($model->$attribute);
                 }
             } catch (DecryptException $e) {
-                //
             }
         }
 

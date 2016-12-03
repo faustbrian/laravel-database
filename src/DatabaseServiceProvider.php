@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Database;
 
 use BrianFaust\Database\Connectors\ConnectionFactory;
@@ -17,7 +19,7 @@ use Sofa\Eloquence\ServiceProvider as SofaServiceProvider;
 
 class DatabaseServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         if (class_exists(SofaServiceProvider::class)) {
             $this->app->register(SofaServiceProvider::class);
@@ -28,7 +30,7 @@ class DatabaseServiceProvider extends ServiceProvider
         });
     }
 
-    public function provides()
+    public function provides(): array
     {
         $services = [];
 

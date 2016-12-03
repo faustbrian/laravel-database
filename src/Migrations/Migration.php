@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Database\Migrations;
 
 use BrianFaust\Database\Schema\Blueprint;
@@ -19,7 +21,7 @@ abstract class Migration
 
     protected $schema;
 
-    public function __construct()
+    public function __construct(): void
     {
         $this->schema = \DB::getSchemaBuilder();
 

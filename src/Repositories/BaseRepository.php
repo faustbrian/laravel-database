@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Database\Repositories;
 
 use BrianFaust\Database\Contracts\Repositories\Traits\AggregateTrait as AggregateContract;
@@ -67,6 +69,5 @@ AggregateContract,
 
     public function getModelClass()
     {
-        //
     }
 }
