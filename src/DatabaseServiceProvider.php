@@ -23,10 +23,10 @@ declare(strict_types=1);
 namespace BrianFaust\Database;
 
 use BrianFaust\Database\Connectors\ConnectionFactory;
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 use Sofa\Eloquence\ServiceProvider as SofaServiceProvider;
 
-class DatabaseServiceProvider extends ServiceProvider
+class DatabaseServiceProvider extends AbstractServiceProvider
 {
     public function register(): void
     {
