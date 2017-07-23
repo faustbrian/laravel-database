@@ -42,7 +42,7 @@ class CountCacheObserver
 
     protected function manager()
     {
-        if (!$this->manager) {
+        if (! $this->manager) {
             $this->manager = new CountCacheManager();
         }
 

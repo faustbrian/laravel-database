@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Schema;
 
-use BrianFaust\Database\Schema\Blueprint;
 use Closure;
+use BrianFaust\Database\Schema\Blueprint;
 
 trait BuilderTrait
 {
@@ -50,7 +50,7 @@ trait BuilderTrait
         ($type === 'increments') ? $blueprint->{$type}($key) : $blueprint->{$type}($key)->primary();
 
         foreach ($this->config as $key => $value) {
-            if (!empty($value)) {
+            if (! empty($value)) {
                 if ($key === 'hashid') {
                     $blueprint->hashid('hashid')->index();
 

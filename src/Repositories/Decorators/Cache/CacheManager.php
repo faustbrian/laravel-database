@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Repositories\Decorators\Cache;
 
-use BrianFaust\Database\Contracts\Repositories\Decorators\Cache;
 use Illuminate\Cache\CacheManager as IlluminateCacheManager;
+use BrianFaust\Database\Contracts\Repositories\Decorators\Cache;
 
 class CacheManager implements Cache
 {
