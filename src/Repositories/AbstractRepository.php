@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Repositories;
 
-use BrianFaust\Database\Contracts\Repositories\Repository;
 use Illuminate\Container\Container;
+use BrianFaust\Database\Contracts\Repositories\Repository;
 
 abstract class AbstractRepository implements Repository
 {

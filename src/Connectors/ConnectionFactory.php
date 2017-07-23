@@ -14,9 +14,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Connectors;
 
-use Illuminate\Database\Connectors\ConnectionFactory as BaseConnectionFactory;
-use InvalidArgumentException;
 use PDO;
+use InvalidArgumentException;
+use Illuminate\Database\Connectors\ConnectionFactory as BaseConnectionFactory;
 
 class ConnectionFactory extends BaseConnectionFactory
 {

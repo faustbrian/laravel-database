@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Repositories;
 
-use BrianFaust\Database\Exceptions\ModelNotFoundException;
 use Illuminate\Database\Eloquent\Model;
+use BrianFaust\Database\Exceptions\ModelNotFoundException;
 
 trait ExceptionTrait
 {
