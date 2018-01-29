@@ -3,10 +3,10 @@
     "description": "Repositories, Entities and Presenters for Laravel 5.",
     "require": {
         "php": ">=5.5.9",
-        "faustbrian/laravel-service-provider": "^1.0",
+        "illuminate/support": "5.4.* || 5.5.*",
         "hashids/hashids": "^1.0",
         "illuminate/database": "5.1.*|5.2.*",
-        "nesbot/carbon": ">=1.21.0",
+        "nesbot/carbon": "^1.22",
         "ramsey/uuid": "^3.1"
     },
     "suggest": {
