@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Behaviours\CountCache;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class CountCacheManager
 {
@@ -109,7 +109,7 @@ class CountCacheManager
 
     public function getTable($model)
     {
-        if (! is_object($model)) {
+        if (!is_object($model)) {
             $model = new $model();
         }
 

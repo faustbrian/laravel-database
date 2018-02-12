@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Repositories;
 
-use BrianFaust\Database\Repositories\Criteria\WithRelations;
 use BrianFaust\Database\Repositories\Criteria\WithLazyRelations;
+use BrianFaust\Database\Repositories\Criteria\WithRelations;
 
 trait BuilderTrait
 {
