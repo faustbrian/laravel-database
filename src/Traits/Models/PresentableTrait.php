@@ -20,7 +20,7 @@ trait PresentableTrait
 
     public function present()
     {
-        if (! $this->presenterInstance) {
+        if (!$this->presenterInstance) {
             $presenterClass = $this->getPresenterClass();
 
             $this->presenterInstance = new $presenterClass($this);

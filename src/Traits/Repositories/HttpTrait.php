@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Repositories;
 
-use Illuminate\Contracts\Validation\Validator;
 use BrianFaust\Database\Exceptions\ValidationException;
+use Illuminate\Contracts\Validation\Validator;
 
 trait HttpTrait
 {

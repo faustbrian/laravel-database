@@ -69,8 +69,8 @@ class DateTime
     public static function getDateTimeRange($start, $end = null, $exact = false)
     {
         return [
-            static::buildDateTime($start, ! $exact),
-            static::buildDateTime($end ?: $start, false, ! $exact),
+            static::buildDateTime($start, !$exact),
+            static::buildDateTime($end ?: $start, false, !$exact),
         ];
     }
 

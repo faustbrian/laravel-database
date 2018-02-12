@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Repositories;
 
-use Illuminate\Database\Eloquent\Model;
 use BrianFaust\Database\Exceptions\RepositoryException;
+use Illuminate\Database\Eloquent\Model;
 
 trait CrudlTrait
 {
@@ -48,7 +48,7 @@ trait CrudlTrait
     {
         $model = $this->requireBy($column, $id);
 
-        if (! $model = $model->fill($data)->save()) {
+        if (!$model = $model->fill($data)->save()) {
             throw new RepositoryException('Could not be saved');
         }
 
@@ -59,7 +59,7 @@ trait CrudlTrait
 
     public function updateModel(Model $model, array $data)
     {
-        if (! $model->update($data)) {
+        if (!$model->update($data)) {
             throw new RepositoryException('Could not be saved');
         }
 

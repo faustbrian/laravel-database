@@ -23,7 +23,7 @@ trait UuidTrait
 
     public function requireByUuid($uuid, $columns = ['*'])
     {
-        if (! $record = $this->findByUuid($uuid, $columns)) {
+        if (!$record = $this->findByUuid($uuid, $columns)) {
             $this->modelNotFound($this->model);
         }
 
