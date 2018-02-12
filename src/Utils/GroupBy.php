@@ -101,7 +101,7 @@ class GroupBy
 
     private static function toCollection($data)
     {
-        if (! $data instanceof Collection) {
+        if (!$data instanceof Collection) {
             $data = new Collection($data);
         }
 

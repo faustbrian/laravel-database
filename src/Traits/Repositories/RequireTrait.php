@@ -18,7 +18,7 @@ trait RequireTrait
 {
     public function requireBy($column, $value, $columns = ['*'])
     {
-        if (! $record = $this->findFirstBy($column, $value, $columns)) {
+        if (!$record = $this->findFirstBy($column, $value, $columns)) {
             $this->modelNotFound($this->getModel());
         }
 
