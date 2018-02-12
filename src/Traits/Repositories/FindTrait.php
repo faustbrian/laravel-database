@@ -14,9 +14,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Repositories;
 
-use Illuminate\Database\Eloquent\Model;
 use BrianFaust\Database\Repositories\Criteria\OrderBy;
 use BrianFaust\Database\Repositories\Criteria\WithTrashed;
+use Illuminate\Database\Eloquent\Model;
 
 trait FindTrait
 {
@@ -61,25 +61,25 @@ trait FindTrait
 
         foreach ($where as $field => $value) {
             if ($value instanceof \Closure) {
-                $model = (! $or)
+                $model = (!$or)
                     ? $model->where($value)
                     : $model->orWhere($value);
             } elseif (is_array($value)) {
                 if (count($value) === 3) {
                     list($field, $operator, $search) = $value;
 
-                    $model = (! $or)
+                    $model = (!$or)
                         ? $model->where($field, $operator, $search)
                         : $model->orWhere($field, $operator, $search);
                 } elseif (count($value) === 2) {
                     list($field, $search) = $value;
 
-                    $model = (! $or)
+                    $model = (!$or)
                         ? $model->where($field, '=', $search)
                         : $model->orWhere($field, '=', $search);
                 }
             } else {
-                $model = (! $or)
+                $model = (!$or)
                     ? $model->where($field, '=', $value)
                     : $model->orWhere($field, '=', $value);
             }

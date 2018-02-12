@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Repositories\Criteria;
 
-use Illuminate\Database\Eloquent\Model;
 use BrianFaust\Database\Contracts\Repositories\Repository;
+use Illuminate\Database\Eloquent\Model;
 
 class HavingRaw extends Criterion
 {

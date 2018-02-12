@@ -23,7 +23,7 @@ trait SlugTrait
 
     public function requireBySlug($slug, $columns = ['*'])
     {
-        if (! $record = $this->findBySlug($slug, $columns)) {
+        if (!$record = $this->findBySlug($slug, $columns)) {
             $this->modelNotFound($this->model);
         }
 

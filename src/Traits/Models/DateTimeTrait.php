@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Database\Traits\Models;
 
-use Carbon\Carbon;
 use BrianFaust\Database\Utils\DateTime;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 
 trait DateTimeTrait
@@ -137,7 +137,7 @@ trait DateTimeTrait
 
     public function scopeFromDateTimeRange(Builder $query, $range, $exact = true)
     {
-        if (! is_array($range)) {
+        if (!is_array($range)) {
             $range = DateTime::getDateTimeRange($range, $range, $exact);
         } else {
             $range = [
