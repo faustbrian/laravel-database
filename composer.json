@@ -3,9 +3,9 @@
     "description": "Repositories, Entities and Presenters for Laravel 5.",
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "^5.6",
+        "illuminate/support": "^5.8",
         "hashids/hashids": "^1.0",
-        "illuminate/database": "^5.6",
+        "illuminate/database": "^5.8",
         "nesbot/carbon": "^1.22",
         "ramsey/uuid": "^3.1"
     },
