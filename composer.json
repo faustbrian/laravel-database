@@ -1,5 +1,5 @@
 {
-    "name": "faustbrian/laravel-database",
+    "name": "artisanry/database",
     "description": "Repositories, Entities and Presenters for Laravel 5.",
     "require": {
         "php": ">=5.5.9",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Database\\": "src/"
+            "Artisanry\\Database\\": "src/"
         }
     }
 }

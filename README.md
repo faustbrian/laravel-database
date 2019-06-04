@@ -1,22 +1,22 @@
 # Laravel Database
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Database/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Database)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-database.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Database.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Database/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Database.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Database)
+[![Build Status](https://img.shields.io/travis/artisanry/Database/master.svg?style=flat-square)](https://travis-ci.org/artisanry/Database)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/artisanry/database.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/artisanry/Database.svg?style=flat-square)](https://github.com/artisanry/Database/releases)
+[![License](https://img.shields.io/packagist/l/artisanry/Database.svg?style=flat-square)](https://packagist.org/packages/artisanry/Database)
 
 ## Installation
 
 First, pull in the package through Composer.
 
 ```js
-composer require faustbrian/laravel-database:1.0.*@dev
+composer require artisanry/database:1.0.*@dev
 ```
 
 And then include the service provider within `app/config/app.php`.
 
 ```php
-BrianFaust\Database\ServiceProvider::class
+Artisanry\Database\ServiceProvider::class
 ```
 
 ## Base Classes
@@ -48,7 +48,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@basecode.sh. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -57,4 +57,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
+[MIT](LICENSE) © [Brian Faust](https://basecode.sh)

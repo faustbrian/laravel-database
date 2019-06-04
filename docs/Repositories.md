@@ -3,7 +3,7 @@
 ##### Create a new Repository
 
 ```php
-use BrianFaust\Database\Repositories\BaseRepository;
+use Artisanry\Database\Repositories\BaseRepository;
 
 class UserRepository extends BaseRepository
 {

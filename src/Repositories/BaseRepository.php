@@ -6,34 +6,34 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Database.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Database\Repositories;
+namespace Artisanry\Database\Repositories;
 
-use BrianFaust\Database\Contracts\Repositories\Traits\AggregateTrait as AggregateContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\BuilderTrait as BuilderContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\CollectionTrait as CollectionContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\CriteriaTrait as CriteriaContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\CrudlTrait as CrudlContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\ExceptionTrait as ExceptionContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\FindTrait as FindContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\GetterTrait as GetterContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\RelationshipTrait as RelationshipContract;
-use BrianFaust\Database\Contracts\Repositories\Traits\RequireTrait as RequireContract;
-use BrianFaust\Database\Traits\Repositories\AggregateTrait;
-use BrianFaust\Database\Traits\Repositories\BuilderTrait;
-use BrianFaust\Database\Traits\Repositories\CollectionTrait;
-use BrianFaust\Database\Traits\Repositories\CriteriaTrait;
-use BrianFaust\Database\Traits\Repositories\CrudlTrait;
-use BrianFaust\Database\Traits\Repositories\ExceptionTrait;
-use BrianFaust\Database\Traits\Repositories\FindTrait;
-use BrianFaust\Database\Traits\Repositories\GetterTrait;
-use BrianFaust\Database\Traits\Repositories\RelationshipTrait;
-use BrianFaust\Database\Traits\Repositories\RequireTrait;
+use Artisanry\Database\Contracts\Repositories\Traits\AggregateTrait as AggregateContract;
+use Artisanry\Database\Contracts\Repositories\Traits\BuilderTrait as BuilderContract;
+use Artisanry\Database\Contracts\Repositories\Traits\CollectionTrait as CollectionContract;
+use Artisanry\Database\Contracts\Repositories\Traits\CriteriaTrait as CriteriaContract;
+use Artisanry\Database\Contracts\Repositories\Traits\CrudlTrait as CrudlContract;
+use Artisanry\Database\Contracts\Repositories\Traits\ExceptionTrait as ExceptionContract;
+use Artisanry\Database\Contracts\Repositories\Traits\FindTrait as FindContract;
+use Artisanry\Database\Contracts\Repositories\Traits\GetterTrait as GetterContract;
+use Artisanry\Database\Contracts\Repositories\Traits\RelationshipTrait as RelationshipContract;
+use Artisanry\Database\Contracts\Repositories\Traits\RequireTrait as RequireContract;
+use Artisanry\Database\Traits\Repositories\AggregateTrait;
+use Artisanry\Database\Traits\Repositories\BuilderTrait;
+use Artisanry\Database\Traits\Repositories\CollectionTrait;
+use Artisanry\Database\Traits\Repositories\CriteriaTrait;
+use Artisanry\Database\Traits\Repositories\CrudlTrait;
+use Artisanry\Database\Traits\Repositories\ExceptionTrait;
+use Artisanry\Database\Traits\Repositories\FindTrait;
+use Artisanry\Database\Traits\Repositories\GetterTrait;
+use Artisanry\Database\Traits\Repositories\RelationshipTrait;
+use Artisanry\Database\Traits\Repositories\RequireTrait;
 use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
 

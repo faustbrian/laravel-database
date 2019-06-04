@@ -1,6 +1,6 @@
 # Changelog
 
-All Notable changes to `faustbrian/laravel-database` will be documented in this file.
+All Notable changes to `artisanry/database` will be documented in this file.
 
 ## 1.0.0 (04/11/2016)
 - First release

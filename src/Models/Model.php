@@ -6,16 +6,16 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Database.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Database\Models;
+namespace Artisanry\Database\Models;
 
-use BrianFaust\Database\Contracts\Models\Traits\ScopesTrait as ScopesContract;
-use BrianFaust\Database\Traits\Models\ScopesTrait;
+use Artisanry\Database\Contracts\Models\Traits\ScopesTrait as ScopesContract;
+use Artisanry\Database\Traits\Models\ScopesTrait;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 abstract class Model extends Eloquent implements ScopesContract

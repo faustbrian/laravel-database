@@ -4,7 +4,7 @@
 ##### EncryptAttributes
 
 ```php
-use BrianFaust\Database\Traits\Models\EncryptAttributes;
+use Artisanry\Database\Traits\Models\EncryptAttributes;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
