@@ -6,7 +6,7 @@
         "illuminate/support": "^5.8",
         "hashids/hashids": "^4.0",
         "illuminate/database": "^5.8",
-        "nesbot/carbon": "^1.22",
+        "nesbot/carbon": "^2.19",
         "ramsey/uuid": "^3.1"
     },
     "suggest": {
