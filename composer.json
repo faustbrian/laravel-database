@@ -4,7 +4,7 @@
     "require": {
         "php": ">=5.5.9",
         "illuminate/support": "^5.8",
-        "hashids/hashids": "^1.0",
+        "hashids/hashids": "^4.0",
         "illuminate/database": "^5.8",
         "nesbot/carbon": "^1.22",
         "ramsey/uuid": "^3.1"
