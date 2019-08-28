@@ -1,6 +1,5 @@
 <?php
 
-
 declare(strict_types=1);
 
 /*
@@ -15,7 +14,6 @@ declare(strict_types=1);
 namespace Artisanry\Database\Traits\Repositories;
 
 use Artisanry\Database\Exceptions\ValidationException;
-use Illuminate\Contracts\Validation\Validator;
 
 trait HttpTrait
 {
